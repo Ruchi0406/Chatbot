@@ -10,10 +10,10 @@ import time
 from datetime import datetime
 #from database.users_chats_db import db
 
-API_ID = "25450075"
-API_HASH = "278e22b00d6dd565c837405eda49e6f2"
+API_ID = "24006476"
+API_HASH = "15478961975051dfc360958e9ea07830"
 BOT_TOKEN = os.environ.get("BOT_TOKEN", None) 
-MONGO_URL = "mongodb+srv://kuldiprathod2003:kuldiprathod2003@cluster0.wxqpikp.mongodb.net/?retryWrites=true&w=majority"
+MONGO_URL = "mongodb+srv://adityapatel:aditya310708@cluster0.esldbqp.mongodb.net/?retryWrites=true&w=majority"
 DATABASE_NAME = os.environ.get("DATABASE_NAME") 
 BOT_USERNAME = os.environ.get("BOT_USERNAME")
 BOT_NAME = os.environ.get("BOT_NAME")
@@ -45,7 +45,7 @@ START = f"""
 **๏ Hie Baby🐒 ๏**
 """
 
-@bot.on_message(filters.command(["start", "aistart", f"start@{BOT_USERNAME}"]))
+@bot.on_message(filters.command(["aistart", f"start@{BOT_USERNAME}"]))
 async def restart(client, m: Message):
     accha = await m.reply_text(
                 text = random.choice(EMOJIOS),
@@ -332,6 +332,6 @@ async def vickprivatesticker(client: Client, message: Message):
            if not Yo == "text":
                await message.reply_sticker(f"{hey}")
 
-print(f"🎄 𝗖𝗛𝗔𝗧𝗕𝗢𝗧 𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗘𝗗 𝗚𝗢 𝗔𝗡𝗗 𝗙𝗨𝗖𝗞🎄 ")      
+print(f"🎄 𝗖𝗛𝗔𝗧𝗕𝗢𝗧 𝗜𝗦 𝗦𝗧𝗔𝗥𝗧𝗘𝗗🎄... \n𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 𝐉εε sԵυ∂ყ 𝐑σσɱ ")      
 bot.run()
 #@ Mr.Daxx
